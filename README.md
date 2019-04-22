@@ -77,6 +77,8 @@ start esx_menu_list
 start esx_menu_dialog
 ```
 # Legal
+### Open source dependencies
+This fork uses [bootstrap 4.3.1](https://getbootstrap.com/) which is licenced under the [MIT license](https://github.com/twbs/bootstrap/blob/v4.3.1/LICENSE)
 ### License
 es_extended - EssentialMode Extended framework for FiveM
 
