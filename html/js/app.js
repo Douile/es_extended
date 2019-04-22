@@ -71,6 +71,16 @@
 		});
 	};
 
+	ESX.notification = function (type, content, delay) {
+		let alertType = UTILS.parseBSAlertType(type);
+		let alertDelay = UTILS.parseInt(delay,3000);
+
+		let elem = $('<div class="alert ' + alertType + '">' + content + '</div>');
+		$('#notifications').append(elem);
+
+		$(elem).delay(alertDelay).alert('close');
+	}
+
 	window.onData = (data) => {
 		switch (data.action) {
 			case 'setHUDDisplay': {
@@ -95,6 +105,12 @@
 
 			case 'inventoryNotification': {
 				ESX.inventoryNotification(data.add, data.item, data.count);
+				break;
+			}
+
+			case 'notification': {
+				ESX.notification(data.type, data.content, data.delay);
+				break;
 			}
 		}
 	};
