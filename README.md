@@ -1,6 +1,8 @@
 # es_extended
 es_extended is a roleplay framework for FiveM. It is developed on top of [EssentialMode](https://essentialmode.com/) (aka ES), thus commonly named ESX - the **Es**sentialMode E**x**tended framework for FiveM.
 
+Fork by [Douile](https://github.com/Douile/) with additions designed for use in the Roofstad RP community.
+
 ### Links & Read more
 - [ESX Documentation](https://esx-org.github.io/)
 - [ES Documentation](https://docs.essentialmode.com/)
