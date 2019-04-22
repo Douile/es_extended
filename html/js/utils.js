@@ -29,9 +29,9 @@
 		return alertType;
 	};
 
-	UTILS.parseInt = function(data, default) {
+	UTILS.parseInt = function(data, defaultValue) {
 		let number = parseInt(data);
-		if (isNaN(number)) number = default;
+		if (isNaN(number)) number = defaultValue;
 		return number;
 	}
 })
