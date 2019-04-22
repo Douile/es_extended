@@ -75,10 +75,17 @@
 		let alertType = UTILS.parseBSAlertType(type);
 		let alertDelay = UTILS.parseInt(delay,3000);
 
-		let elem = $('<div class="alert ' + alertType + '">' + content + '</div>');
+		let elem = $('<div class="alert fade show ' + alertType + '">' + content + '</div>');
+		elem.alert();
 		$('#notifications').append(elem);
 
-		$(elem).delay(alertDelay).alert('close');
+		setTimeout(() => {
+			elem.removeClass('show');
+			setTimeout(() => {
+				elem.remove();
+			},150);
+		},alertDelay);
+		return elem;
 	}
 
 	window.onData = (data) => {
