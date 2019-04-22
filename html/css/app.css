@@ -11,6 +11,9 @@
 html {
 	overflow: hidden;
 }
+body {
+	background: none;
+}
 
 #hud {
 	position: absolute;
