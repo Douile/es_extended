@@ -3,7 +3,7 @@
 
 	UTILS.parseBSAlertType = function(type) {
 		var alertType;
-		// Switch statement not consitent with style used in app.js
+		// Switch statement not consistent with style used in app.js
 		switch(type.toLowerCase()) {
 			case 'primary':
 			default:
