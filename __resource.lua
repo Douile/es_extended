@@ -71,9 +71,14 @@ files {
 	'html/ui.html',
 
 	'html/css/app.css',
+	'html/css/bootstrap.min.css',
+	'html/css/bootstrap.min.css.map',
 
 	'html/js/mustache.min.js',
+	'html/js/bootstrap.min.js',
+	'html/js/bootstrap.min.js.map',
 	'html/js/wrapper.js',
+	'html/js/utils.js'
 	'html/js/app.js',
 
 	'html/fonts/pdown.ttf',
