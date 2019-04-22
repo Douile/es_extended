@@ -34,4 +34,4 @@
 		if (isNaN(number)) number = defaultValue;
 		return number;
 	}
-})
+})();
